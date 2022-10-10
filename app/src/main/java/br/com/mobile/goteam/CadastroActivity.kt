@@ -39,6 +39,7 @@ class CadastroActivity : AppCompatActivity() {
             Toast.makeText(this, "Você já está nessa tela!", Toast.LENGTH_SHORT).show()
         } else if (id == R.id.action_buscar) {
             Toast.makeText(this, "Buscando...", Toast.LENGTH_SHORT).show()
+            
         } else {
             finish()
         }
