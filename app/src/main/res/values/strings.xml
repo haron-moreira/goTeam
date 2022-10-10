@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">goTeam Contries</string>
+    <string name="login_msg">Olá\nFaça o login para continuar:</string>
+    <string name="login_label">Insira seu usuário:</string>
+    <string name="password_label">Insira sua senha:</string>
+    <string name="action_buscar">Buscar</string>
+    <string name="action_add">Adicionar</string>
+    <string name="action_atualizar">Atualizar</string>
+    <string name="action_sair">Sair</string>
+
+</resources>
