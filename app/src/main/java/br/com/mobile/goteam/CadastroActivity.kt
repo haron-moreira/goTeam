@@ -32,12 +32,11 @@ class CadastroActivity : AppCompatActivity() {
             /* val intent = Intent(this, MainActivity::class.java)
             startActivity(intent) */
         } else if (id == R.id.action_atualizar) {
-
-
             Toast.makeText(this, "Atualizando...", Toast.LENGTH_SHORT).show()
         } else if (id == R.id.action_add) {
             Toast.makeText(this, "Você já está nessa tela!", Toast.LENGTH_SHORT).show()
         } else if (id == R.id.action_buscar) {
+            // Não consegui implementar a parte da busca, não está funcionando.
             Toast.makeText(this, "Buscando...", Toast.LENGTH_SHORT).show()
             
         } else {
