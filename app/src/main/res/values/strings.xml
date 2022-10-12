@@ -7,5 +7,6 @@
     <string name="action_add">Adicionar</string>
     <string name="action_atualizar">Atualizar</string>
     <string name="action_sair">Sair</string>
-
+    <string name="abrir">Abrir</string>
+    <string name="fechar">Fechar</string>
 </resources>

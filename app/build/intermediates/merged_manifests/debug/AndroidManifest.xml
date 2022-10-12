@@ -22,11 +22,15 @@
         android:testOnly="true"
         android:theme="@style/Theme.GoTeam" >
         <activity
+            android:name="br.com.mobile.goteam.SobreActivity"
+            android:exported="false" />
+        <activity
             android:name="br.com.mobile.goteam.CadastroActivity"
             android:exported="false" />
         <activity
             android:name="br.com.mobile.goteam.HomeScreenActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/AppTheme.Toolbar" />
         <activity
             android:name="br.com.mobile.goteam.LogActivity"
             android:exported="false" />

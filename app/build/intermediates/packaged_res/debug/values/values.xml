@@ -7,14 +7,20 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
+    <string name="abrir">Abrir</string>
     <string name="action_add">Adicionar</string>
     <string name="action_atualizar">Atualizar</string>
     <string name="action_buscar">Buscar</string>
     <string name="action_sair">Sair</string>
     <string name="app_name">goTeam Contries</string>
+    <string name="fechar">Fechar</string>
     <string name="login_label">Insira seu usuário:</string>
     <string name="login_msg">Olá\nFaça o login para continuar:</string>
     <string name="password_label">Insira sua senha:</string>
+    <style name="AppTheme.Toolbar" parent="Theme.GoTeam">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
     <style name="Theme.GoTeam" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>
