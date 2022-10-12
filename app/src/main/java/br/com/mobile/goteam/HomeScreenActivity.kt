@@ -1,5 +1,6 @@
 package br.com.mobile.goteam
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -8,15 +9,18 @@ import android.os.Looper
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.widget.SearchView
+import androidx.appcompat.widget.SearchView
 import android.widget.Toast
-import br.com.mobile.goteam.databinding.ActivityCadastroBinding
+import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.core.view.GravityCompat
 import br.com.mobile.goteam.databinding.ActivityHomeScreenBinding
-import br.com.mobile.goteam.databinding.LoginActivityBinding
-import kotlin.concurrent.timer
+import com.google.android.material.navigation.NavigationView
 
 
-class HomeScreenActivity : LogActivity() {
+class HomeScreenActivity : LogActivity(),
+    NavigationView.OnNavigationItemSelectedListener {
+
+    private val context: Context get() = this
 
     private val binding by lazy {
         ActivityHomeScreenBinding.inflate(layoutInflater)
@@ -27,28 +31,37 @@ class HomeScreenActivity : LogActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-        supportActionBar?.title = "Home"
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         Toast.makeText(this, "Bem Vindo!", Toast.LENGTH_SHORT).show()
 
        val params = intent.extras
-
         val nome = params?.getString("nome")
+
+
+
+        setSupportActionBar(binding.toolbarInclude.toolbar)
+        supportActionBar?.title = "Home"
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+
+        configMenuLateral()
     }
 
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_home, menu)
 
+
+
         (menu?.findItem(R.id.action_buscar)?.actionView as SearchView?)?.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
 
             override fun onQueryTextChange(newText: String): Boolean {
-                //Toast.makeText(this, "Atualizado!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(context, "$newText", Toast.LENGTH_SHORT).show()
                 return false
             }
 
             override fun onQueryTextSubmit(query: String): Boolean {
+                Toast.makeText(context, "$query", Toast.LENGTH_SHORT).show()
                 return false
             }
 
@@ -84,6 +97,7 @@ class HomeScreenActivity : LogActivity() {
 
             Toast.makeText(this, "Buscando...", Toast.LENGTH_SHORT).show()
 
+
         } else {
 
             Toast.makeText(this, "Algo está errado...", Toast.LENGTH_SHORT).show()
@@ -91,6 +105,35 @@ class HomeScreenActivity : LogActivity() {
         }
 
         return true
+    }
+
+    override fun onNavigationItemSelected(item: MenuItem): Boolean {
+        when (item.itemId){
+
+            R.id.nav_paises -> {
+                Toast.makeText(this, "Clicou em países", Toast.LENGTH_SHORT).show()
+            }
+            R.id.nav_sobre -> {
+                Toast.makeText(this, "Clicou em sobre", Toast.LENGTH_SHORT).show()
+            }
+            R.id.nav_logout -> {
+                finish()
+            }
+        }
+
+        binding.layoutMenuLateral.closeDrawer(GravityCompat.START)
+
+        return true
+
+    }
+
+    private fun configMenuLateral() {
+        var toggle = ActionBarDrawerToggle(this, binding.layoutMenuLateral, binding.toolbarInclude.toolbar, R.string.abrir, R.string.fechar)
+        binding.layoutMenuLateral.addDrawerListener(toggle)
+
+        toggle.syncState()
+
+        binding.menuLateral.setNavigationItemSelectedListener(this)
     }
 
 

@@ -7,6 +7,7 @@
         android:icon="@drawable/ic_buscar_white"
         android:title="@string/action_buscar"
         app:showAsAction="always"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
 
         />
 

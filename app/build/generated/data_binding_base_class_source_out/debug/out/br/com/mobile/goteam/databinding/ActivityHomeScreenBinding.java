@@ -4,33 +4,47 @@ package br.com.mobile.goteam.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import br.com.mobile.goteam.R;
+import com.google.android.material.navigation.NavigationView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
 
 public final class ActivityHomeScreenBinding implements ViewBinding {
   @NonNull
-  private final LinearLayout rootView;
+  private final DrawerLayout rootView;
+
+  @NonNull
+  public final DrawerLayout layoutMenuLateral;
+
+  @NonNull
+  public final NavigationView menuLateral;
 
   @NonNull
   public final ProgressBar progressBar;
 
-  private ActivityHomeScreenBinding(@NonNull LinearLayout rootView,
-      @NonNull ProgressBar progressBar) {
+  @NonNull
+  public final ToolbarBinding toolbarInclude;
+
+  private ActivityHomeScreenBinding(@NonNull DrawerLayout rootView,
+      @NonNull DrawerLayout layoutMenuLateral, @NonNull NavigationView menuLateral,
+      @NonNull ProgressBar progressBar, @NonNull ToolbarBinding toolbarInclude) {
     this.rootView = rootView;
+    this.layoutMenuLateral = layoutMenuLateral;
+    this.menuLateral = menuLateral;
     this.progressBar = progressBar;
+    this.toolbarInclude = toolbarInclude;
   }
 
   @Override
   @NonNull
-  public LinearLayout getRoot() {
+  public DrawerLayout getRoot() {
     return rootView;
   }
 
@@ -55,13 +69,29 @@ public final class ActivityHomeScreenBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      DrawerLayout layoutMenuLateral = (DrawerLayout) rootView;
+
+      id = R.id.menuLateral;
+      NavigationView menuLateral = ViewBindings.findChildViewById(rootView, id);
+      if (menuLateral == null) {
+        break missingId;
+      }
+
       id = R.id.progressBar;
       ProgressBar progressBar = ViewBindings.findChildViewById(rootView, id);
       if (progressBar == null) {
         break missingId;
       }
 
-      return new ActivityHomeScreenBinding((LinearLayout) rootView, progressBar);
+      id = R.id.toolbarInclude;
+      View toolbarInclude = ViewBindings.findChildViewById(rootView, id);
+      if (toolbarInclude == null) {
+        break missingId;
+      }
+      ToolbarBinding binding_toolbarInclude = ToolbarBinding.bind(toolbarInclude);
+
+      return new ActivityHomeScreenBinding((DrawerLayout) rootView, layoutMenuLateral, menuLateral,
+          progressBar, binding_toolbarInclude);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
