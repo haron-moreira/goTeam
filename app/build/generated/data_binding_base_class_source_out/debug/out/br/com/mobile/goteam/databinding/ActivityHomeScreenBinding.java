@@ -8,6 +8,7 @@ import android.widget.ProgressBar;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import br.com.mobile.goteam.R;
@@ -19,6 +20,9 @@ import java.lang.String;
 public final class ActivityHomeScreenBinding implements ViewBinding {
   @NonNull
   private final DrawerLayout rootView;
+
+  @NonNull
+  public final RecyclerView RecyclerViewPais;
 
   @NonNull
   public final DrawerLayout layoutMenuLateral;
@@ -33,9 +37,11 @@ public final class ActivityHomeScreenBinding implements ViewBinding {
   public final ToolbarBinding toolbarInclude;
 
   private ActivityHomeScreenBinding(@NonNull DrawerLayout rootView,
-      @NonNull DrawerLayout layoutMenuLateral, @NonNull NavigationView menuLateral,
-      @NonNull ProgressBar progressBar, @NonNull ToolbarBinding toolbarInclude) {
+      @NonNull RecyclerView RecyclerViewPais, @NonNull DrawerLayout layoutMenuLateral,
+      @NonNull NavigationView menuLateral, @NonNull ProgressBar progressBar,
+      @NonNull ToolbarBinding toolbarInclude) {
     this.rootView = rootView;
+    this.RecyclerViewPais = RecyclerViewPais;
     this.layoutMenuLateral = layoutMenuLateral;
     this.menuLateral = menuLateral;
     this.progressBar = progressBar;
@@ -69,6 +75,12 @@ public final class ActivityHomeScreenBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.RecyclerViewPais;
+      RecyclerView RecyclerViewPais = ViewBindings.findChildViewById(rootView, id);
+      if (RecyclerViewPais == null) {
+        break missingId;
+      }
+
       DrawerLayout layoutMenuLateral = (DrawerLayout) rootView;
 
       id = R.id.menuLateral;
@@ -90,8 +102,8 @@ public final class ActivityHomeScreenBinding implements ViewBinding {
       }
       ToolbarBinding binding_toolbarInclude = ToolbarBinding.bind(toolbarInclude);
 
-      return new ActivityHomeScreenBinding((DrawerLayout) rootView, layoutMenuLateral, menuLateral,
-          progressBar, binding_toolbarInclude);
+      return new ActivityHomeScreenBinding((DrawerLayout) rootView, RecyclerViewPais,
+          layoutMenuLateral, menuLateral, progressBar, binding_toolbarInclude);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

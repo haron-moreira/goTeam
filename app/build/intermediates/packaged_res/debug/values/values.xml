@@ -13,6 +13,7 @@
     <string name="action_buscar">Buscar</string>
     <string name="action_sair">Sair</string>
     <string name="app_name">goTeam Contries</string>
+    <string name="bandeira">Bandeira</string>
     <string name="fechar">Fechar</string>
     <string name="login_label">Insira seu usuário:</string>
     <string name="login_msg">Olá\nFaça o login para continuar:</string>

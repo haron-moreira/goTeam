@@ -9,15 +9,17 @@ import android.os.Looper
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.LinearLayout
 import androidx.appcompat.widget.SearchView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
+import androidx.recyclerview.widget.LinearLayoutManager
 import br.com.mobile.goteam.databinding.ActivityHomeScreenBinding
 import com.google.android.material.navigation.NavigationView
 
 
-class HomeScreenActivity : LogActivity(),
+open class HomeScreenActivity : LogActivity(),
     NavigationView.OnNavigationItemSelectedListener {
 
     private val context: Context get() = this
@@ -26,27 +28,50 @@ class HomeScreenActivity : LogActivity(),
         ActivityHomeScreenBinding.inflate(layoutInflater)
     }
 
+    private var paises = listOf<Pais>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
-
-        Toast.makeText(this, "Bem Vindo!", Toast.LENGTH_SHORT).show()
-
-       val params = intent.extras
+        val params = intent.extras
         val nome = params?.getString("nome")
 
 
 
         setSupportActionBar(binding.toolbarInclude.toolbar)
         supportActionBar?.title = "Home"
-        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+        /*supportActionBar?.setDisplayHomeAsUpEnabled(true)*/
 
 
         configMenuLateral()
+
+        binding.RecyclerViewPais?.layoutManager = LinearLayoutManager(this)
+        binding.RecyclerViewPais?.setHasFixedSize(true)
     }
 
+    override fun onResume() {
+        super.onResume()
+        paises = PaisService.getPaises()
+        binding.RecyclerViewPais?.adapter = PaisAdapter(paises) { onClickPais(it) }
+
+        binding.menuLateral.setCheckedItem(R.id.nav_paises)
+    }
+
+    fun onClickPais(pais: Pais){
+
+
+        var it = Intent(this, DetalhesActivity::class.java)
+        it.putExtra("nomePais", pais.nome)
+        it.putExtra("capitalPais", pais.capital)
+        it.putExtra("populacaoPais", pais.populacao)
+        it.putExtra("latitudePais", pais.latittude)
+        it.putExtra("longitudePais", pais.longitude)
+        it.putExtra("bandeiraPais", pais.bandeira)
+        it.putExtra("continentePais", pais.continente)
+       /* it.putExtra("pais", pais) */
+        startActivity(it)
+    }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.menu_home, menu)
@@ -111,10 +136,13 @@ class HomeScreenActivity : LogActivity(),
         when (item.itemId){
 
             R.id.nav_paises -> {
-                Toast.makeText(this, "Clicou em países", Toast.LENGTH_SHORT).show()
+
+                var it = Intent(this, HomeScreenActivity::class.java)
+                startActivity(it)
             }
             R.id.nav_sobre -> {
-                Toast.makeText(this, "Clicou em sobre", Toast.LENGTH_SHORT).show()
+                var it = Intent(this, SobreActivity::class.java)
+                startActivity(it)
             }
             R.id.nav_logout -> {
                 finish()

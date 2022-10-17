@@ -25,6 +25,15 @@
             </ProgressBar>
 
         </FrameLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="vertical"
+            android:id="@+id/RecyclerViewPais">
+        </androidx.recyclerview.widget.RecyclerView>
+
     </LinearLayout>
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/menuLateral"
