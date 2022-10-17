@@ -3,6 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="br.com.mobile.goteam">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -13,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.GoTeam"
         tools:targetApi="31">
+        <activity
+            android:name=".DetalhesActivity"
+            android:exported="false" />
         <activity
             android:name=".SobreActivity"
             android:exported="false" />

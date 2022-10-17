@@ -21,9 +21,6 @@ class MainActivity : LogActivity() {
         binding.globoLogin.setImageResource(R.drawable.globo80)
 
         binding.btnLogin.setOnClickListener {
-            Toast.makeText(this, "Validando dados...", Toast.LENGTH_SHORT).show()
-
-
 
             /*val params = Bundle()
             *params.putString("usuario", "Haron")
