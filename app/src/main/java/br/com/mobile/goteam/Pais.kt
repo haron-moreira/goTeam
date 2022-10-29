@@ -10,7 +10,7 @@ class Pais : Serializable {
     var bandeira: String = ""
     var continente: String = ""
     var populacao: String = ""
-    var latittude: String = ""
+    var latitude: String = ""
     var longitude: String = ""
 
     init {

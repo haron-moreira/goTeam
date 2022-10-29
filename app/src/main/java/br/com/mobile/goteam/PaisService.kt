@@ -1,26 +1,42 @@
 package br.com.mobile.goteam
 
+import android.util.Log
+import com.google.gson.Gson
+import com.google.gson.GsonBuilder
+import com.google.gson.reflect.TypeToken
+import java.lang.reflect.Type
+import java.net.URL
+
 object PaisService {
 
+
+    /*val host = "http://192.168.50.171:5003"*/
+    val host = "https://haric-lab.com"
+    val TAG = "WEBSERVICE_APP_PAISES"
+
     fun getPaises(): List<Pais> {
-        var paises = mutableListOf<Pais>()
 
-        for (i in 1..5) {
-            var p = Pais()
+        val url = "$host/paises.php"
 
-            p.nome = "País $i"
-            p.capital = "Capital  $i"
-            p.continente = "Continente $i"
-            p.bandeira = "https://static.todamateria.com.br/upload/ba/nd/bandeira-do-brasil-og.jpg"
-            p.latittude = "-$i$i$i"
-            p.longitude = "$i$i$i"
-            p.populacao = "$i.1000.465"
-
-            paises.add(p)
-        }
+        val json = HttpHelper.get(url)
+        var paises = parseJson<List<Pais>>(json)
 
         return paises
 
     }
+
+    fun savePais(pais: Pais) {
+        var json = GsonBuilder().create().toJson(pais)
+        HttpHelper.post("$host/addPais.php", json)
+    }
+
+    inline fun <reified T> parseJson(json: String): T {
+        val type = object  : TypeToken<T>(){}.type
+
+        return Gson().fromJson<T>(json, type)
+    }
+
+
+
 
 }

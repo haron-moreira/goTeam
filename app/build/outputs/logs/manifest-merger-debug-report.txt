@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-45:12
+ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-48:12
 MERGED from [androidx.databinding:viewbinding:7.2.2] C:\Users\haron.moreira\.gradle\caches\transforms-3\f87045d13cf7e3313b6ede0242c2118d\transformed\viewbinding-7.2.2\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\haron.moreira\.gradle\caches\transforms-3\d58c32f2d48308f4a51dd3976936e834\transformed\material-1.6.1\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\haron.moreira\.gradle\caches\transforms-3\40a6e4c4e6a7843d511334c18302e5d3\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
@@ -45,22 +45,22 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\haron.moreira\.g
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\haron.moreira\.gradle\caches\transforms-3\9e317407a6cf4c48efbc9c8b280c6581\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\haron.moreira\.gradle\caches\transforms-3\7341f734db0e321b6e690cf15510a7ca\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\haron.moreira\.gradle\caches\transforms-3\857e03149483f701a2d3531919e69de5\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-45:12
-INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-48:12
+INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-48:12
 	package
 		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:4:5-35
 		INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml
 		INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml
-		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-45:12
+		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-48:12
 		INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml
-		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-45:12
+		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-48:12
 		INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:2:11-69
@@ -69,7 +69,7 @@ ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:6:5-67
 	android:name
 		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:6:22-64
 application
-ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:8:5-43:19
+ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:8:5-46:19
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\haron.moreira\.gradle\caches\transforms-3\d58c32f2d48308f4a51dd3976936e834\transformed\material-1.6.1\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\haron.moreira\.gradle\caches\transforms-3\d58c32f2d48308f4a51dd3976936e834\transformed\material-1.6.1\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\haron.moreira\.gradle\caches\transforms-3\40a6e4c4e6a7843d511334c18302e5d3\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -104,54 +104,56 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\haron.moreira\.gra
 		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:16:9-44
 	android:dataExtractionRules
 		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:10:9-65
+	android:usesCleartextTraffic
+		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:18:9-44
 activity#br.com.mobile.goteam.DetalhesActivity
-ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:18:9-20:40
-	android:exported
-		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:20:13-37
-	android:name
-		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:19:13-45
-activity#br.com.mobile.goteam.SobreActivity
 ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:21:9-23:40
 	android:exported
 		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:23:13-37
 	android:name
-		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:22:13-42
-activity#br.com.mobile.goteam.CadastroActivity
+		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:22:13-45
+activity#br.com.mobile.goteam.SobreActivity
 ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:24:9-26:40
 	android:exported
 		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:26:13-37
 	android:name
-		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:25:13-45
-activity#br.com.mobile.goteam.HomeScreenActivity
-ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:27:9-30:55
+		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:25:13-42
+activity#br.com.mobile.goteam.CadastroActivity
+ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:27:9-29:40
 	android:exported
 		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:28:13-45
+activity#br.com.mobile.goteam.HomeScreenActivity
+ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:30:9-33:55
+	android:exported
+		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:32:13-37
 	android:theme
-		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:30:13-52
+		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:33:13-52
 	android:name
-		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:28:13-47
+		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:31:13-47
 activity#br.com.mobile.goteam.LogActivity
-ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:31:9-33:40
+ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:34:9-36:40
 	android:exported
-		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:33:13-37
+		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:36:13-37
 	android:name
-		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:32:13-40
+		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:35:13-40
 activity#br.com.mobile.goteam.MainActivity
-ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:34:9-42:20
+ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:37:9-45:20
 	android:exported
-		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:36:13-36
+		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:39:13-36
 	android:name
-		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:35:13-41
+		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:38:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:37:13-41:29
+ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:40:13-44:29
 action#android.intent.action.MAIN
-ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:38:17-69
+ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:41:17-69
 	android:name
-		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:38:25-66
+		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:41:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:40:17-77
+ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:43:17-77
 	android:name
-		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:40:27-74
+		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:43:27-74
 uses-sdk
 INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml
