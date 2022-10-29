@@ -4,20 +4,95 @@ package br.com.mobile.goteam.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.LinearLayoutCompat;
 import androidx.viewbinding.ViewBinding;
+import androidx.viewbinding.ViewBindings;
 import br.com.mobile.goteam.R;
 import java.lang.NullPointerException;
 import java.lang.Override;
+import java.lang.String;
 
 public final class ActivityCadastroBinding implements ViewBinding {
   @NonNull
   private final LinearLayoutCompat rootView;
 
-  private ActivityCadastroBinding(@NonNull LinearLayoutCompat rootView) {
+  @NonNull
+  public final Button btnCadastra;
+
+  @NonNull
+  public final EditText capitalPais;
+
+  @NonNull
+  public final EditText continentePais;
+
+  @NonNull
+  public final EditText latitudePais;
+
+  @NonNull
+  public final EditText longitudePais;
+
+  @NonNull
+  public final EditText nomePais;
+
+  @NonNull
+  public final EditText populacaoPais;
+
+  @NonNull
+  public final TextView textView1;
+
+  @NonNull
+  public final TextView textView11;
+
+  @NonNull
+  public final TextView textView12;
+
+  @NonNull
+  public final TextView textView13;
+
+  @NonNull
+  public final TextView textView14;
+
+  @NonNull
+  public final TextView textView15;
+
+  @NonNull
+  public final TextView textView16;
+
+  @NonNull
+  public final TextView textView17;
+
+  @NonNull
+  public final EditText urlBandeira;
+
+  private ActivityCadastroBinding(@NonNull LinearLayoutCompat rootView, @NonNull Button btnCadastra,
+      @NonNull EditText capitalPais, @NonNull EditText continentePais,
+      @NonNull EditText latitudePais, @NonNull EditText longitudePais, @NonNull EditText nomePais,
+      @NonNull EditText populacaoPais, @NonNull TextView textView1, @NonNull TextView textView11,
+      @NonNull TextView textView12, @NonNull TextView textView13, @NonNull TextView textView14,
+      @NonNull TextView textView15, @NonNull TextView textView16, @NonNull TextView textView17,
+      @NonNull EditText urlBandeira) {
     this.rootView = rootView;
+    this.btnCadastra = btnCadastra;
+    this.capitalPais = capitalPais;
+    this.continentePais = continentePais;
+    this.latitudePais = latitudePais;
+    this.longitudePais = longitudePais;
+    this.nomePais = nomePais;
+    this.populacaoPais = populacaoPais;
+    this.textView1 = textView1;
+    this.textView11 = textView11;
+    this.textView12 = textView12;
+    this.textView13 = textView13;
+    this.textView14 = textView14;
+    this.textView15 = textView15;
+    this.textView16 = textView16;
+    this.textView17 = textView17;
+    this.urlBandeira = urlBandeira;
   }
 
   @Override
@@ -43,10 +118,112 @@ public final class ActivityCadastroBinding implements ViewBinding {
 
   @NonNull
   public static ActivityCadastroBinding bind(@NonNull View rootView) {
-    if (rootView == null) {
-      throw new NullPointerException("rootView");
-    }
+    // The body of this method is generated in a way you would not otherwise write.
+    // This is done to optimize the compiled bytecode for size and performance.
+    int id;
+    missingId: {
+      id = R.id.btnCadastra;
+      Button btnCadastra = ViewBindings.findChildViewById(rootView, id);
+      if (btnCadastra == null) {
+        break missingId;
+      }
 
-    return new ActivityCadastroBinding((LinearLayoutCompat) rootView);
+      id = R.id.capitalPais;
+      EditText capitalPais = ViewBindings.findChildViewById(rootView, id);
+      if (capitalPais == null) {
+        break missingId;
+      }
+
+      id = R.id.continentePais;
+      EditText continentePais = ViewBindings.findChildViewById(rootView, id);
+      if (continentePais == null) {
+        break missingId;
+      }
+
+      id = R.id.latitudePais;
+      EditText latitudePais = ViewBindings.findChildViewById(rootView, id);
+      if (latitudePais == null) {
+        break missingId;
+      }
+
+      id = R.id.longitudePais;
+      EditText longitudePais = ViewBindings.findChildViewById(rootView, id);
+      if (longitudePais == null) {
+        break missingId;
+      }
+
+      id = R.id.nomePais;
+      EditText nomePais = ViewBindings.findChildViewById(rootView, id);
+      if (nomePais == null) {
+        break missingId;
+      }
+
+      id = R.id.populacaoPais;
+      EditText populacaoPais = ViewBindings.findChildViewById(rootView, id);
+      if (populacaoPais == null) {
+        break missingId;
+      }
+
+      id = R.id.textView1;
+      TextView textView1 = ViewBindings.findChildViewById(rootView, id);
+      if (textView1 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView11;
+      TextView textView11 = ViewBindings.findChildViewById(rootView, id);
+      if (textView11 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView12;
+      TextView textView12 = ViewBindings.findChildViewById(rootView, id);
+      if (textView12 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView13;
+      TextView textView13 = ViewBindings.findChildViewById(rootView, id);
+      if (textView13 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView14;
+      TextView textView14 = ViewBindings.findChildViewById(rootView, id);
+      if (textView14 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView15;
+      TextView textView15 = ViewBindings.findChildViewById(rootView, id);
+      if (textView15 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView16;
+      TextView textView16 = ViewBindings.findChildViewById(rootView, id);
+      if (textView16 == null) {
+        break missingId;
+      }
+
+      id = R.id.textView17;
+      TextView textView17 = ViewBindings.findChildViewById(rootView, id);
+      if (textView17 == null) {
+        break missingId;
+      }
+
+      id = R.id.urlBandeira;
+      EditText urlBandeira = ViewBindings.findChildViewById(rootView, id);
+      if (urlBandeira == null) {
+        break missingId;
+      }
+
+      return new ActivityCadastroBinding((LinearLayoutCompat) rootView, btnCadastra, capitalPais,
+          continentePais, latitudePais, longitudePais, nomePais, populacaoPais, textView1,
+          textView11, textView12, textView13, textView14, textView15, textView16, textView17,
+          urlBandeira);
+    }
+    String missingId = rootView.getResources().getResourceName(id);
+    throw new NullPointerException("Missing required view with ID: ".concat(missingId));
   }
 }

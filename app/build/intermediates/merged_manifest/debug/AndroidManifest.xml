@@ -22,7 +22,8 @@
         android:roundIcon="@drawable/globo96"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.GoTeam" >
+        android:theme="@style/Theme.GoTeam"
+        android:usesCleartextTraffic="true" >
         <activity
             android:name="br.com.mobile.goteam.DetalhesActivity"
             android:exported="false" />

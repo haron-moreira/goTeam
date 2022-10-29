@@ -17,6 +17,7 @@ import androidx.core.view.GravityCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import br.com.mobile.goteam.databinding.ActivityHomeScreenBinding
 import com.google.android.material.navigation.NavigationView
+import kotlin.concurrent.thread
 
 
 open class HomeScreenActivity : LogActivity(),
@@ -52,10 +53,20 @@ open class HomeScreenActivity : LogActivity(),
 
     override fun onResume() {
         super.onResume()
-        paises = PaisService.getPaises()
-        binding.RecyclerViewPais?.adapter = PaisAdapter(paises) { onClickPais(it) }
+        this.taskPaises()
 
-        binding.menuLateral.setCheckedItem(R.id.nav_paises)
+    }
+
+    private fun taskPaises() {
+
+        Thread {
+            paises = PaisService.getPaises()
+
+            runOnUiThread {
+                binding.RecyclerViewPais?.adapter = PaisAdapter(paises) { onClickPais(it) }
+                binding.menuLateral.setCheckedItem(R.id.nav_paises)
+            }
+        }.start()
     }
 
     fun onClickPais(pais: Pais){
@@ -65,7 +76,7 @@ open class HomeScreenActivity : LogActivity(),
         it.putExtra("nomePais", pais.nome)
         it.putExtra("capitalPais", pais.capital)
         it.putExtra("populacaoPais", pais.populacao)
-        it.putExtra("latitudePais", pais.latittude)
+        it.putExtra("latitudePais", pais.latitude)
         it.putExtra("longitudePais", pais.longitude)
         it.putExtra("bandeiraPais", pais.bandeira)
         it.putExtra("continentePais", pais.continente)
