@@ -98,10 +98,17 @@ string action_buscar
 string action_sair
 string app_name
 string bandeira
+string default_web_client_id
 string fechar
+string gcm_defaultSenderId
+string google_api_key
+string google_app_id
+string google_crash_reporting_api_key
+string google_storage_bucket
 string login_label
 string login_msg
 string password_label
+string project_id
 style AppTheme.Toolbar
 style Theme.GoTeam
 xml backup_rules

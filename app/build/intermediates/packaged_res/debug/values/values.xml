@@ -14,10 +14,17 @@
     <string name="action_sair">Sair</string>
     <string name="app_name">goTeam Contries</string>
     <string name="bandeira">Bandeira</string>
+    <string name="default_web_client_id" translatable="false">1027717314668-sjrf1jaou4kudnapb9o800h8msag9cce.apps.googleusercontent.com</string>
     <string name="fechar">Fechar</string>
+    <string name="gcm_defaultSenderId" translatable="false">1027717314668</string>
+    <string name="google_api_key" translatable="false">AIzaSyB8ajXMe1QvX2VVRffHAItTdpbG11BiA7E</string>
+    <string name="google_app_id" translatable="false">1:1027717314668:android:6a745b645a9d7fe3d84049</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyB8ajXMe1QvX2VVRffHAItTdpbG11BiA7E</string>
+    <string name="google_storage_bucket" translatable="false">goteamcountries.appspot.com</string>
     <string name="login_label">Insira seu usuário:</string>
     <string name="login_msg">Olá\nFaça o login para continuar:</string>
     <string name="password_label">Insira sua senha:</string>
+    <string name="project_id" translatable="false">goteamcountries</string>
     <style name="AppTheme.Toolbar" parent="Theme.GoTeam">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>

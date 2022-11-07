@@ -38,7 +38,9 @@ open class HomeScreenActivity : LogActivity(),
         val params = intent.extras
         val nome = params?.getString("nome")
 
-
+        val intent = Intent(this, CadastroActivity::class.java)
+        NotificationUtil.create(1, intent, "GoTeam Countries", "" +
+                "Você iniciou o GoTeam, lembre-se de cadastrar novos países!")
 
         setSupportActionBar(binding.toolbarInclude.toolbar)
         supportActionBar?.title = "Home"
