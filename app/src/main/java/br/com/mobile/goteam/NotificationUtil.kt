@@ -22,7 +22,7 @@ object NotificationUtil {
         }
     }
 
-    fun create(id: Int, intent: Intent, titulo: String, texto: String) {
+    fun create(id: Int, intent: Intent, titulo: String?, texto: String?) {
         createChannel()
 
         val contexto = GoTeamApplication.getInstance().applicationContext

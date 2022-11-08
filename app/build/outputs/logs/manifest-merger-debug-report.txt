@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-49:12
+ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-58:12
 MERGED from [androidx.databinding:viewbinding:7.2.2] C:\Users\haron.moreira\.gradle\caches\transforms-3\d6ed1d6c4bcb605ddf09d3e24075db29\transformed\viewbinding-7.2.2\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\haron.moreira\.gradle\caches\transforms-3\ad37abed3ddcf62e60f731ffc6a17991\transformed\material-1.6.1\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\haron.moreira\.gradle\caches\transforms-3\c94e5760b4467141138dea13479904d4\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
@@ -71,22 +71,22 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\haron.moreira\.g
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\haron.moreira\.gradle\caches\transforms-3\cef82c722593360cea29d544811ab23c\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] C:\Users\haron.moreira\.gradle\caches\transforms-3\5f492233e270d9379ddf933f7727791f\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\haron.moreira\.gradle\caches\transforms-3\82f3540fcffb3b92cdf2a4b29cacfb7e\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-49:12
-INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-49:12
+INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-58:12
+INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-58:12
 	package
 		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:4:5-35
 		INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml
 		INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml
-		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-49:12
+		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-58:12
 		INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml
-		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-49:12
+		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:2:1-58:12
 		INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:2:11-69
@@ -109,7 +109,7 @@ MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.4] C:\Us
 	android:name
 		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:6:22-64
 application
-ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:8:5-47:19
+ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:8:5-56:19
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\haron.moreira\.gradle\caches\transforms-3\ad37abed3ddcf62e60f731ffc6a17991\transformed\material-1.6.1\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\haron.moreira\.gradle\caches\transforms-3\ad37abed3ddcf62e60f731ffc6a17991\transformed\material-1.6.1\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\haron.moreira\.gradle\caches\transforms-3\c94e5760b4467141138dea13479904d4\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -236,6 +236,18 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:44:17-77
 	android:name
 		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:44:27-74
+service#br.com.mobile.goteam.MyFirebaseMessagingService
+ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:48:9-55:19
+	android:exported
+		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:49:56-79
+	android:name
+		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:49:13-55
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:50:13-54:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:51:17-53:26
+	android:name
+		ADDED from C:\goTeam\app\src\main\AndroidManifest.xml:52:21-71
 uses-sdk
 INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\goTeam\app\src\main\AndroidManifest.xml
@@ -446,14 +458,6 @@ ADDED from [com.google.firebase:firebase-messaging:23.0.4] C:\Users\haron.moreir
 		ADDED from [com.google.firebase:firebase-messaging:23.0.4] C:\Users\haron.moreira\.gradle\caches\transforms-3\3a7f938eb166d1b32edc93ca853a435c\transformed\firebase-messaging-23.0.4\AndroidManifest.xml:46:13-43
 	android:name
 		ADDED from [com.google.firebase:firebase-messaging:23.0.4] C:\Users\haron.moreira\.gradle\caches\transforms-3\3a7f938eb166d1b32edc93ca853a435c\transformed\firebase-messaging-23.0.4\AndroidManifest.xml:45:13-82
-intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
-ADDED from [com.google.firebase:firebase-messaging:23.0.4] C:\Users\haron.moreira\.gradle\caches\transforms-3\3a7f938eb166d1b32edc93ca853a435c\transformed\firebase-messaging-23.0.4\AndroidManifest.xml:48:13-50:29
-	android:priority
-		ADDED from [com.google.firebase:firebase-messaging:23.0.4] C:\Users\haron.moreira\.gradle\caches\transforms-3\3a7f938eb166d1b32edc93ca853a435c\transformed\firebase-messaging-23.0.4\AndroidManifest.xml:48:28-51
-action#com.google.firebase.MESSAGING_EVENT
-ADDED from [com.google.firebase:firebase-messaging:23.0.4] C:\Users\haron.moreira\.gradle\caches\transforms-3\3a7f938eb166d1b32edc93ca853a435c\transformed\firebase-messaging-23.0.4\AndroidManifest.xml:49:17-78
-	android:name
-		ADDED from [com.google.firebase:firebase-messaging:23.0.4] C:\Users\haron.moreira\.gradle\caches\transforms-3\3a7f938eb166d1b32edc93ca853a435c\transformed\firebase-messaging-23.0.4\AndroidManifest.xml:49:25-75
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [com.google.firebase:firebase-messaging:23.0.4] C:\Users\haron.moreira\.gradle\caches\transforms-3\3a7f938eb166d1b32edc93ca853a435c\transformed\firebase-messaging-23.0.4\AndroidManifest.xml:52:9-58:19
 MERGED from [com.google.firebase:firebase-datatransport:18.1.3] C:\Users\haron.moreira\.gradle\caches\transforms-3\dbedb2582300ed4cfb1037136c55f520\transformed\firebase-datatransport-18.1.3\AndroidManifest.xml:25:9-31:19
