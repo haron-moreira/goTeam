@@ -1,8 +1,10 @@
-#Sat Oct 29 20:39:50 BRT 2022
+#Mon Nov 07 20:13:14 BRT 2022
+path.4=classes2.dex
 path.3=3/classes.dex
 path.2=13/classes.dex
 path.1=0/classes.dex
 path.0=classes.dex
+base.4=C\:\\goTeam\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 base.3=C\:\\goTeam\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\3\\classes.dex
 base.2=C\:\\goTeam\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\13\\classes.dex
 base.1=C\:\\goTeam\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
@@ -11,3 +13,4 @@ renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
+renamed.4=classes5.dex
