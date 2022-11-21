@@ -1,9 +1,9 @@
 R_DEF: Internal format may change without notice
 local
 color black
-color purple_200
-color purple_500
-color purple_700
+color green_200
+color green_700
+color green_A6B
 color teal_200
 color teal_700
 color white
@@ -31,6 +31,8 @@ id action_sair
 id btnCadastra
 id btnLogin
 id button
+id button2
+id button3
 id campoSenha
 id campoUsuario
 id capitalPais
@@ -43,6 +45,7 @@ id globoLogin
 id imagemNav
 id latitudePais
 id layoutMenuLateral
+id lembrarUsuario
 id longitudePais
 id menuLateral
 id nav_logout
@@ -67,6 +70,7 @@ id textView14
 id textView15
 id textView16
 id textView17
+id textView18
 id textView2
 id textView3
 id textView4

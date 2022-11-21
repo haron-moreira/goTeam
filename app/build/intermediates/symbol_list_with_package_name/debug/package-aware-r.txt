@@ -1283,6 +1283,9 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color green_200
+color green_700
+color green_A6B
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color m3_appbar_overlay_color
@@ -1768,9 +1771,6 @@ color primary_text_default_material_dark
 color primary_text_default_material_light
 color primary_text_disabled_material_dark
 color primary_text_disabled_material_light
-color purple_200
-color purple_500
-color purple_700
 color radiobutton_themeable_attribute_color
 color ripple_material_dark
 color ripple_material_light
@@ -2673,6 +2673,8 @@ id bounceStart
 id btnCadastra
 id btnLogin
 id button
+id button2
+id button3
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -2828,6 +2830,7 @@ id layoutMenuLateral
 id left
 id leftToRight
 id legacy
+id lembrarUsuario
 id light
 id line1
 id line3
@@ -3051,6 +3054,7 @@ id textView14
 id textView15
 id textView16
 id textView17
+id textView18
 id textView2
 id textView3
 id textView4
