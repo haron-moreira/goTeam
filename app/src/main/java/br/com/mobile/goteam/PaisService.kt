@@ -16,18 +16,45 @@ object PaisService {
 
     fun getPaises(): List<Pais> {
 
-        val url = "$host/paises.php"
+        try {
+            val url = "$host/paises.php"
 
-        val json = HttpHelper.get(url)
-        var paises = parseJson<List<Pais>>(json)
+            val json = HttpHelper.get(url)
+            var paises = parseJson<List<Pais>>(json)
 
-        return paises
+            DatabaseManager.getPaisDAO().deletaLista()
 
+            for (pais in paises) {
+                saveOffline(pais)
+            }
+            return paises
+
+        } catch (ex: Exception) {
+            var paises = DatabaseManager.getPaisDAO().getAll()
+            return paises
+        }
     }
 
     fun savePais(pais: Pais) {
-        var json = GsonBuilder().create().toJson(pais)
-        HttpHelper.post("$host/addPais.php", json)
+        if (AndroidUtils.internetDisponivel()) {
+            var json = GsonBuilder().create().toJson(pais)
+            HttpHelper.post("$host/addPais.php", json)
+        } else {
+            DatabaseManager.getPaisDAO().insert(pais)
+        }
+    }
+
+    fun saveOffline(pais: Pais) {
+        DatabaseManager.getPaisDAO().insert(pais)
+    }
+
+    fun removePais(pais: Pais) {
+        if (AndroidUtils.internetDisponivel()) {
+            var json = GsonBuilder().create().toJson(pais)
+            HttpHelper.post("$host/removePais.php", json)
+        } else {
+            DatabaseManager.getPaisDAO().delete(pais)
+        }
     }
 
     inline fun <reified T> parseJson(json: String): T {

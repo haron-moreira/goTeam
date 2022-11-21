@@ -2,10 +2,12 @@ package br.com.mobile.goteam
 
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.widget.Toolbar
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
+import androidx.core.content.ContextCompat
 import br.com.mobile.goteam.databinding.ActivityDetalhesBinding
 import com.squareup.picasso.Picasso
 
@@ -51,7 +53,24 @@ class DetalhesActivity : LogActivity() {
             })
 
         binding.button.setOnClickListener{
-            Toast.makeText(this, "Em preparação, aguarde..", Toast.LENGTH_SHORT).show()
+            val url_mapa = "https://www.google.com/maps/search/?api=1&query=$nome"
+
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.data = Uri.parse(url_mapa)
+            startActivity(intent)
+
+        }
+
+        binding.button2.setOnClickListener {
+            Toast.makeText(this, "Removendo da lista..", Toast.LENGTH_SHORT).show()
+        }
+
+        binding.button3.setOnClickListener {
+            val url_mapa = "https://pt.wikipedia.org/wiki/$nome"
+
+            val intent = Intent(Intent.ACTION_VIEW)
+            intent.data = Uri.parse(url_mapa)
+            startActivity(intent)
         }
 
         supportActionBar?.title = "$nome"

@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Switch;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -35,6 +36,12 @@ public final class LoginActivityBinding implements ViewBinding {
   public final ImageView globoLogin;
 
   @NonNull
+  public final Switch lembrarUsuario;
+
+  @NonNull
+  public final TextView textView18;
+
+  @NonNull
   public final TextView textView2;
 
   @NonNull
@@ -45,12 +52,15 @@ public final class LoginActivityBinding implements ViewBinding {
 
   private LoginActivityBinding(@NonNull LinearLayout rootView, @NonNull Button btnLogin,
       @NonNull EditText campoSenha, @NonNull EditText campoUsuario, @NonNull ImageView globoLogin,
-      @NonNull TextView textView2, @NonNull TextView textView4, @NonNull TextView textView5) {
+      @NonNull Switch lembrarUsuario, @NonNull TextView textView18, @NonNull TextView textView2,
+      @NonNull TextView textView4, @NonNull TextView textView5) {
     this.rootView = rootView;
     this.btnLogin = btnLogin;
     this.campoSenha = campoSenha;
     this.campoUsuario = campoUsuario;
     this.globoLogin = globoLogin;
+    this.lembrarUsuario = lembrarUsuario;
+    this.textView18 = textView18;
     this.textView2 = textView2;
     this.textView4 = textView4;
     this.textView5 = textView5;
@@ -107,6 +117,18 @@ public final class LoginActivityBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.lembrarUsuario;
+      Switch lembrarUsuario = ViewBindings.findChildViewById(rootView, id);
+      if (lembrarUsuario == null) {
+        break missingId;
+      }
+
+      id = R.id.textView18;
+      TextView textView18 = ViewBindings.findChildViewById(rootView, id);
+      if (textView18 == null) {
+        break missingId;
+      }
+
       id = R.id.textView2;
       TextView textView2 = ViewBindings.findChildViewById(rootView, id);
       if (textView2 == null) {
@@ -126,7 +148,7 @@ public final class LoginActivityBinding implements ViewBinding {
       }
 
       return new LoginActivityBinding((LinearLayout) rootView, btnLogin, campoSenha, campoUsuario,
-          globoLogin, textView2, textView4, textView5);
+          globoLogin, lembrarUsuario, textView18, textView2, textView4, textView5);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
