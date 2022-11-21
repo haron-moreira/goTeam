@@ -82,6 +82,7 @@ open class HomeScreenActivity : LogActivity(),
         it.putExtra("longitudePais", pais.longitude)
         it.putExtra("bandeiraPais", pais.bandeira)
         it.putExtra("continentePais", pais.continente)
+        it.putExtra("instancia", pais)
        /* it.putExtra("pais", pais) */
         startActivity(it)
     }
