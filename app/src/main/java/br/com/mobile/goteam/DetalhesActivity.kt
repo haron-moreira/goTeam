@@ -63,6 +63,7 @@ class DetalhesActivity : LogActivity() {
 
         binding.button2.setOnClickListener {
             Toast.makeText(this, "Removendo da lista..", Toast.LENGTH_SHORT).show()
+            finish()
         }
 
         binding.button3.setOnClickListener {
